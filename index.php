@@ -1,26 +1,60 @@
 <?php get_header(); ?>
 			
-			<?php
-				$blog_hero = of_get_option('blog_hero');
-				if ($blog_hero){
-			?>
-			<div class="clearfix row-fluid">
-				<div class="hero-unit">
-				
-					<h1><?php bloginfo('title'); ?></h1>
-					
-					<p><?php bloginfo('description'); ?></p>
-				
+			<div class='center-header'>
+				<h1>Free computers and training. No matter where you are.</h1>
+			</div>
+			
+			<div class="row-fluid">
+				<div class="span6">
+					<div class="well">
+						<h2><a href='/locations'>Locations</a></h2>
+						<p class='lead'>Find free computer centers &amp; training in Chicago</p>
+						<p>
+							<a href='/locations'>
+								<img class="img-polaroid" src="<?php echo get_template_directory_uri(); ?>/images/tech-locator-screenshot.png" />
+							</a>
+						</p>
+						<a href="" class="btn btn-info pull-right">Find computers <i class="icon-arrow-right icon-white"></i></a>
+						<div class='clearfix'></div>
+					</div>
+				</div>
+
+				<div class="span6">
+					<div class="well">
+						<h2><a href='/learn'>Learn</a></h2>
+						<p class='lead'>Learn to use the internet and computers</p>
+						<ul>
+							<li>Learn to create your own resume</li>
+							<li>Get training on Microsoft Word and Excel</li>
+							<li>Get connected to your friends and family by using social media</li>
+						</ul>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+						dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+						anim id est laborum.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+						incididunt ut labore et dolore magna aliqua. </p>
+						<a href="" class="btn btn-info pull-right">Get started <i class="icon-arrow-right icon-white"></i></a>
+						<div class='clearfix'></div>
+					</div>
 				</div>
 			</div>
-			<?php
-				}
-			?>
-			
-			<div id="content" class="clearfix row-fluid">
-			
-				<div id="main" class="span8 clearfix" role="main">
 
+			<div id="content" class="clearfix row-fluid">
+				
+				<div class="span6 clearfix">
+					<h2>About</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+						dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+						anim id est laborum.</p>
+				</div>
+				<div id="main" class="span6 clearfix" role="main">
+					<h2>News &amp; Events</h2>
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
 					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
@@ -80,8 +114,6 @@
 					<?php endif; ?>
 			
 				</div> <!-- end #main -->
-    
-				<?php get_sidebar(); // sidebar 1 ?>
     
 			</div> <!-- end #content -->
 
