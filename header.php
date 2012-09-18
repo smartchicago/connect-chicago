@@ -24,7 +24,7 @@
 		<!-- For Nokia -->
 		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/library/images/icons/l/apple-touch-icon.png">
 		<!-- For everything else -->
-		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
+		<!--<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">-->
 				
 		<!-- media-queries.js (fallback) -->
 		<!--[if lt IE 9]>
@@ -97,22 +97,22 @@
 		      <div class='navbar-inner'>
 		        <div class='container'>
 		          <ul class='nav'>
-		            <li class='active'>
+		            <li <?php if ( is_home()) echo "class='active'" ?>>
 		              <a href='/'>Home</a>
 		            </li>
 		            <li>
 		              <a href='http://tech-locator-rails.herokuapp.com/'>Locations</a>
 		            </li>
-		            <li>
+		            <li <?php if ( is_page('learn')) echo "class='active'" ?>>
 		              <a href='/learn'>Learn</a>
 		            </li>
-		            <li>
-		              <a href='/news_and_events'>News &amp; Events</a>
+		            <li <?php if ( is_page('news-events')) echo "class='active'" ?>>
+		              <a href='/news-events'>News &amp; Events</a>
 		            </li>
-		            <li>
+		            <li <?php if ( is_page('volunteer')) echo "class='active'" ?>>
 		              <a href='/volunteer'>Volunteer</a>
 		            </li>
-		            <li>
+		            <li <?php if ( is_page('about')) echo "class='active'" ?>>
 		              <a href='/about'>About</a>
 		            </li>
 		          </ul>
