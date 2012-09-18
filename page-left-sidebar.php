@@ -7,8 +7,16 @@ Template Name: Left Sidebar Page
 <?php get_header(); ?>
 			
 			<div id="content" class="clearfix row-fluid">
-            
-            	<?php get_sidebar(); // sidebar 1 ?>
+        <div class="fluid-sidebar sidebar span4" role="complementary">    
+      		<h3>Section header</h3>
+      		<ul class='nav nav-tabs nav-stacked'>
+      			<li><a href='#'>Link 1</a></li>
+      			<li><a href='#'>Link 2</a></li>
+      			<li><a href='#'>Link 3</a></li>
+      			<li><a href='#'>Link 4</a></li>
+      		</ul>
+        </div>
+        
 			
 				<div id="main" class="span8 clearfix" role="main">
 
@@ -34,8 +42,6 @@ Template Name: Left Sidebar Page
 						</footer> <!-- end article footer -->
 					
 					</article> <!-- end article -->
-					
-					<?php comments_template(); ?>
 					
 					<?php endwhile; ?>	
 					

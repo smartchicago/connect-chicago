@@ -101,7 +101,7 @@
 		              <a href='/'>Home</a>
 		            </li>
 		            <li>
-		              <a href='http://tech-locator-rails.herokuapp.com/'>Locations</a>
+		              <a href='/locations'>Locations</a>
 		            </li>
 		            <li <?php if ( is_page('learn')) echo "class='active'" ?>>
 		              <a href='/learn'>Learn</a>
