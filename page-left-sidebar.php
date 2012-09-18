@@ -7,7 +7,7 @@ Template Name: Left Sidebar Page
 <?php get_header(); ?>
 			
 			<div id="content" class="clearfix row-fluid">
-        <div class="fluid-sidebar sidebar span4" role="complementary">    
+        <div class="fluid-sidebar sidebar span3" role="complementary">    
       		<h3>Section header</h3>
       		<ul class='nav nav-tabs nav-stacked'>
       			<li><a href='#'>Link 1</a></li>
@@ -18,7 +18,7 @@ Template Name: Left Sidebar Page
         </div>
         
 			
-				<div id="main" class="span8 clearfix" role="main">
+				<div id="main" class="span9 clearfix" role="main">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
