@@ -101,7 +101,7 @@
 		              <a href='/'>Home</a>
 		            </li>
 		            <li>
-		              <a href='http://localhost:8080/'>Locations</a>
+		              <a href='http://tech-locator-rails.herokuapp.com/'>Locations</a>
 		            </li>
 		            <li>
 		              <a href='/learn'>Learn</a>
