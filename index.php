@@ -1,9 +1,5 @@
 <?php get_header(); ?>
 			
-			<div class='center-header'>
-				<h1>Free computers and training. No matter where you are.</h1>
-			</div>
-			
 			<div class="row-fluid">
 				<div class="span6">
 					<div class="well">
