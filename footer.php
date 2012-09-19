@@ -15,7 +15,11 @@
 						<?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
 					</nav>
 					
-					<p class="attribution">&copy; <?php bloginfo('name'); ?></p>
+					<p class="attribution">
+						<a rel="license" href="http://creativecommons.org/licenses/by/2.0/">
+							<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/2.0/80x15.png" /></a>
+							<br /><a rel="license" href="http://creativecommons.org/licenses/by/2.0/">Creative Commons</a>
+					</p>
 				
 				</div> <!-- end #inner-footer -->
 				
