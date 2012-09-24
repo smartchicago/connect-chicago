@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic');
+
 body {
   font-size: 14px;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{ 
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 
 .navbar-inner {
@@ -63,9 +70,13 @@ body {
   }
 }
 
-
-
 h2 { 
   line-height: 35px; 
   margin: 5px 0;
+}
+
+.align-center{
+  text-align: center;
+  display: block;
+  margin: 0 auto;
 }

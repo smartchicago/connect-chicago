@@ -14,12 +14,25 @@
 					<nav class="clearfix">
 						<?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
 					</nav>
-					
-					<p class="attribution">
-						<a rel="license" href="http://creativecommons.org/licenses/by/2.0/">
-							<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/2.0/80x15.png" /></a>
-							<br /><a rel="license" href="http://creativecommons.org/licenses/by/2.0/">Creative Commons</a>
-					</p>
+
+					<div class='align-center'>
+						<a href='http://www.broadbandusa.gov/'>
+				      <img alt='Broadband USA' class='logo' src='<?php echo get_template_directory_uri(); ?>/images/BroadbandUSA.png' title='Broadband USA'>
+				    </a>
+						<a href='http://cityofchicago.org'>
+				      <img alt='City of Chicago' class='logo' src='<?php echo get_template_directory_uri(); ?>/images/chicago-seal.png' title='City of Chicago'>
+				    </a>
+				    <a href='http://www.smartchicagocollaborative.org/'>
+				      <img alt='Smart Chicago Collaborative' class='logo' src='<?php echo get_template_directory_uri(); ?>/images/SmartChicago-logo.png' title='Smart Chicago Collaborative'>
+				    </a>
+				    
+						
+						<p class="attribution">
+							<a rel="license" href="http://creativecommons.org/licenses/by/2.0/">
+								<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/2.0/80x15.png" /></a>
+								<br /><a rel="license" href="http://creativecommons.org/licenses/by/2.0/">Creative Commons</a>
+						</p>
+					</div>
 				
 				</div> <!-- end #inner-footer -->
 				

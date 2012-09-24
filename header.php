@@ -43,10 +43,10 @@
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
-		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/custom.css" media="all">
-
 		<!-- theme options from options panel -->
 		<?php get_wpbs_theme_options(); ?>
+
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/custom.css" media="all">
 
 		<?php 
 
