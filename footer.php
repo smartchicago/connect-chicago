@@ -15,7 +15,7 @@
 						<?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
 					</nav>
 
-					<div class='align-center'>	
+					<div class='partner-logos'>	
 						<p class="attribution">
 							<a rel="license" href="http://creativecommons.org/licenses/by/2.0/">
 								<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/2.0/80x15.png" /></a>

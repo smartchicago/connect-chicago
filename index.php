@@ -113,7 +113,7 @@
 			</div> <!-- end #content -->
 
 			<hr />
-			<div class='align-center'>
+			<div class='partner-logos'>
 				<a href='http://www.broadbandusa.gov/'>
 		      <img alt='Broadband USA' class='logo' src='<?php echo get_template_directory_uri(); ?>/images/BroadbandUSA.png' title='Broadband USA'>
 		    </a>

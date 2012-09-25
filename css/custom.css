@@ -75,8 +75,12 @@ h2 {
   margin: 5px 0;
 }
 
-.align-center{
+.partner-logos{
   text-align: center;
   display: block;
   margin: 0 auto;
+}
+
+.partner-logos a:hover {
+  text-decoration: none;
 }
