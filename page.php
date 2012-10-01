@@ -1,35 +1,49 @@
+<?php
+/*
+Template Name: Left Sidebar Page
+*/
+?>
+
 <?php get_header(); ?>
 			
 			<div id="content" class="clearfix row-fluid">
+        <div class="fluid-sidebar sidebar span3" role="complementary">    
+      		<h3>Section header</h3>
+      		<ul class='nav nav-tabs nav-stacked'>
+      			<li><a href='#'>Link 1</a></li>
+      			<li><a href='#'>Link 2</a></li>
+      			<li><a href='#'>Link 3</a></li>
+      			<li><a href='#'>Link 4</a></li>
+      		</ul>
+        </div>
+        
 			
-				<div id="main" class="span8 clearfix" role="main">
+				<div id="main" class="span9 clearfix" role="main">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
-					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 						
 						<header>
 							
-							<div class="page-header"><h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1></div>
+							<div class="page-header"><h1><?php the_title(); ?></h1></div>
 						
 						</header> <!-- end article header -->
 					
-						<section class="post_content clearfix" itemprop="articleBody">
+						<section class="post_content">
 							<?php the_content(); ?>
 					
 						</section> <!-- end article section -->
 						
 						<footer>
 			
-							<?php the_tags('<p class="tags"><span class="tags-title">' . __("Tags","bonestheme") . ':</span> ', ', ', '</p>'); ?>
+							<p class="clearfix"><?php the_tags('<span class="tags">' . __("Tags","bonestheme") . ': ', ', ', '</span>'); ?></p>
 							
 						</footer> <!-- end article footer -->
 					
 					</article> <!-- end article -->
 					
-					<?php comments_template(); ?>
-					
-					<?php endwhile; ?>		
+					<?php endwhile; ?>	
 					
 					<?php else : ?>
 					
@@ -47,8 +61,6 @@
 					<?php endif; ?>
 			
 				</div> <!-- end #main -->
-    
-				<?php get_sidebar(); // sidebar 1 ?>
     
 			</div> <!-- end #content -->
 
