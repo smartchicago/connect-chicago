@@ -5,11 +5,13 @@
 					<div class="well">
 						<h2><a href='/locations'>Locations</a></h2>
 						<p class='lead'><a href='/locations'>Find free computer centers &amp; training in Chicago &raquo;<a href='/locations'></p>
-						<p>
-							<a href='/locations'>
-								<img class="img-polaroid" src="<?php echo get_template_directory_uri(); ?>/images/tech-locator-screenshot.png" />
-							</a>
-						</p>
+						
+						<h4>
+			        Find near an address 
+			        <small>(<a id='findMe' href='#'>find me</a>)</small>
+			      </h4>
+			      <input class="input-block-level" id="search_address" placeholder="Enter an address ..." type="text" />
+			      <input id="btnSearch" class="btn btn-primary" type="button" value="Search" />
 					</div>
 				</div>
 
@@ -24,15 +26,7 @@
 						</ul>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-						dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-						anim id est laborum.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-						incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-						incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-						incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-						incididunt ut labore et dolore magna aliqua. </p>
+						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 					</div>
 				</div>
 			</div>
@@ -125,4 +119,30 @@
 		    </a>
 		  </div>
 
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/library/js/maps_widget_lib.js'></script>
+<script type='text/javascript'>
+      //<![CDATA[
+      $(function() {
+	      geocoder = new google.maps.Geocoder();
+
+	      $('#btnSearch').click(function(){
+	        MapsWidgetLib.doSearch();
+	      });
+
+	      $("#search_address").keydown(function(e){
+	        var key =  e.keyCode ? e.keyCode : e.which;
+	        if(key == 13) {
+	          $('#btnSearch').click();
+	          return false;
+	        }
+	      });
+
+	      $('#findMe').click(function(){
+	        MapsWidgetLib.findMe(); 
+	        return false;
+	      });
+	    });
+      //]]>
+</script>
 <?php get_footer(); ?>
