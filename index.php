@@ -4,13 +4,13 @@
 				<div class="span6">
 					<div class="well">
 						<h2><a href='/locations'>Locations</a></h2>
-						<p class='lead'><a href='/locations'>Find free computer centers &amp; training in Chicago &raquo;<a href='/locations'></p>
+						<p class='lead'>Find free computer centers &amp; training in Chicago</p>
 						
 						<h4>
-			        Find near an address 
+			        Search near an address 
 			        <small>(<a id='findMe' href='#'>find me</a>)</small>
 			      </h4>
-			      <input class="input-block-level" id="search_address" placeholder="Enter an address ..." type="text" />
+			      <input class="input-block-level" id="search_address" placeholder="Enter an address or intersection ..." type="text" />
 			      <input id="btnSearch" class="btn btn-primary" type="button" value="Search" />
 					</div>
 				</div>
@@ -18,7 +18,7 @@
 				<div class="span6">
 					<div class="well">
 						<h2><a href='/learn'>Learn</a></h2>
-						<p class='lead'><a href='/learn'>Learn to use the internet and computers &raquo;</a></p>
+						<p class='lead'>Learn to use the internet and computers</p>
 						<ul>
 							<li>Learn to create your own resume</li>
 							<li>Get training on Microsoft Word and Excel</li>
@@ -44,63 +44,23 @@
 				</div>
 				<div id="main" class="span6 clearfix" role="main">
 					<h2><a href='/news-events'>News &amp; Events</a></h2>
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					
-					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-						
-						<header>
-						
-							<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured' ); ?></a>
-							
-							<div class="page-header"><h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1></div>
-							
-							<p class="meta"><?php _e("Posted", "bonestheme"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_date(); ?></time> <?php _e("by", "bonestheme"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "bonestheme"); ?> <?php the_category(', '); ?>.</p>
-						
-						</header> <!-- end article header -->
-					
-						<section class="post_content clearfix">
-							<?php the_content( __("Read more &raquo;","bonestheme") ); ?>
-						</section> <!-- end article section -->
-						
-						<footer>
-			
-							<p class="tags"><?php the_tags('<span class="tags-title">' . __("Tags","bonestheme") . ':</span> ', ' ', ''); ?></p>
-							
-						</footer> <!-- end article footer -->
-					
-					</article> <!-- end article -->
-					
-					<?php comments_template(); ?>
-					
-					<?php endwhile; ?>	
-					
-					<?php if (function_exists('page_navi')) { // if expirimental feature is active ?>
-						
-						<?php page_navi(); // use the page navi function ?>
-						
-					<?php } else { // if it is disabled, display regular wp prev & next links ?>
-						<nav class="wp-prev-next">
-							<ul class="clearfix">
-								<li class="prev-link"><?php next_posts_link(_e('&laquo; Older Entries', "bonestheme")) ?></li>
-								<li class="next-link"><?php previous_posts_link(_e('Newer Entries &raquo;', "bonestheme")) ?></li>
-							</ul>
-						</nav>
-					<?php } ?>		
-					
-					<?php else : ?>
-					
-					<article id="post-not-found">
-					    <header>
-					    	<h1><?php _e("Not Found", "bonestheme"); ?></h1>
-					    </header>
-					    <section class="post_content">
-					    	<p><?php _e("Sorry, but the requested resource was not found on this site.", "bonestheme"); ?></p>
-					    </section>
-					    <footer>
-					    </footer>
-					</article>
-					
-					<?php endif; ?>
+					<?php
+						query_posts('cat=1&posts_per_page=3&orderby=date&order=DESC');
+						if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+							<div class='row-fluid'>
+								<div class='span3'>
+									<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured' ); ?></a>
+								</div>
+								<div class='span9'>
+									<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+									<p class="meta"><time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_date(); ?></time></p>
+									<?php the_content( __("Read more &raquo;","bonestheme") ); ?>
+								</div>
+							</div>
+						<?php
+						endwhile;
+						endif;
+					?>
 			
 				</div> <!-- end #main -->
     

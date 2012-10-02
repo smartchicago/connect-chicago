@@ -10,24 +10,14 @@
 
 							<div class="hero-unit">
 							
-								<h1>Epic 404 - Article Not Found</h1>
-								<p>This is embarassing. We can't find what you were looking for.</p>
+								<h2>404 - Not Found</h2>
+								<p>Sorry! We can't find what you were looking for.</p>
+
+								<p>Try going <a href='/'>back to the home page</a>.</p>
 															
 							</div>
 													
 						</header> <!-- end article header -->
-					
-						<section class="post_content">
-							
-							<p>Whatever you were looking for was not found, but maybe try looking again or search using the form below.</p>
-
-							<div class="row-fluid">
-								<div class="span12">
-									<?php get_search_form(); ?>
-								</div>
-							</div>
-					
-						</section> <!-- end article section -->
 						
 						<footer>
 							

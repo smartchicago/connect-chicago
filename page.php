@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Left Sidebar Page
+Template Name: Default Page
 */
 ?>
 
