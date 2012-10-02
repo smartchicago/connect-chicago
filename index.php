@@ -6,12 +6,34 @@
 						<h2><a href='/locations'>Locations</a></h2>
 						<p class='lead'>Find free computer centers &amp; training in Chicago</p>
 						
-						<h4>
+						<h3>
 			        Search near an address 
 			        <small>(<a id='findMe' href='#'>find me</a>)</small>
-			      </h4>
-			      <input class="input-block-level" id="search_address" placeholder="Enter an address or intersection ..." type="text" />
-			      <input id="btnSearch" class="btn btn-primary" type="button" value="Search" />
+			      </h3>
+			      <div class="input-append">
+			      	<input class="" id="search_address" placeholder="Enter an address ..." type="text" />
+			      	<input id="btnSearch" class="btn btn-primary" type="button" value="Search" />
+			      </div>
+
+			      <hr />
+
+			      <h3>
+			      	Featured location
+			      	<small><a href='/locations'>Find more &raquo;</a></small>
+			      </h3>
+			      <div class='row-fluid'>
+							<div class='span3'>
+								<a href="#" title="Featured location">
+									<img alt='Featured location' src='<?php echo get_template_directory_uri(); ?>/images/450x250.gif' title='Featured location'>
+							</a>
+							</div>
+							<div class='span9'>
+								<h3><a href="#">Harold Washington Library</a></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+							</div>
+						</div>
 					</div>
 				</div>
 
