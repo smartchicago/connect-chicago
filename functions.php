@@ -506,6 +506,47 @@ function theme_js(){
 }
 add_action('wp_enqueue_scripts', 'theme_js');
 
+if(!function_exists('get_post_top_ancestor_id')){
+/**
+ * Gets the id of the topmost ancestor of the current page. Returns the current
+ * page's id if there is no parent.
+ * 
+ * @uses object $post
+ * @return int 
+ */
+function get_post_top_ancestor_id(){
+    global $post;
+    
+    if($post->post_parent){
+        $ancestors = array_reverse(get_post_ancestors($post->ID));
+        return $ancestors[0];
+    }
+    
+    return $post->ID;
+}}
+
+/**
+* Child page conditional
+* @ Accept's page ID, page slug or page title as parameters
+*/
+function is_page_or_child( $parent = '' ) {
+  global $post;
+ 
+  $parent_obj = get_page( $post->post_parent, ARRAY_A );
+  $parent = (string) $parent;
+  $parent_array = (array) $parent;
+ 
+  if ( in_array( (string) $parent_obj['ID'], $parent_array ) ) {
+    return true;
+  } elseif ( in_array( (string) $parent_obj['post_title'], $parent_array ) ) {
+    return true;  
+  } elseif ( in_array( (string) $parent_obj['post_name'], $parent_array ) ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 // Get theme options
 function get_wpbs_theme_options(){
   $theme_options_styles = '';

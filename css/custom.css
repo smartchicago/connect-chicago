@@ -84,3 +84,11 @@ h2 {
 .partner-logos a:hover {
   text-decoration: none;
 }
+
+.home-box {
+  height: 180px;
+}
+
+.current_page_item {
+  font-weight: bold;
+}

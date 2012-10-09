@@ -103,16 +103,16 @@
 		            <li>
 		              <a href='/locations'>Locations</a>
 		            </li>
-		            <li <?php if ( is_page('learn')) echo "class='active'" ?>>
+		            <li <?php if ( is_page_or_child('learn')) echo "class='active'" ?>>
 		              <a href='/learn'>Learn</a>
 		            </li>
-		            <li <?php if ( is_page('news-events')) echo "class='active'" ?>>
+		            <li <?php if ( is_category(0)) echo "class='active'" ?>>
 		              <a href='/news-events'>News &amp; Events</a>
 		            </li>
-		            <li <?php if ( is_page('volunteer')) echo "class='active'" ?>>
+		            <li <?php if ( is_page_or_child('volunteer')) echo "class='active'" ?>>
 		              <a href='/volunteer'>Volunteer</a>
 		            </li>
-		            <li <?php if ( is_page('about')) echo "class='active'" ?>>
+		            <li <?php if ( is_page_or_child('about')) echo "class='active'" ?>>
 		              <a href='/about'>About</a>
 		            </li>
 		          </ul>

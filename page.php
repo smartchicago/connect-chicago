@@ -5,19 +5,15 @@ Template Name: Default Page
 ?>
 
 <?php get_header(); ?>
-			
+
 			<div id="content" class="clearfix row-fluid">
-        <div class="fluid-sidebar sidebar span3" role="complementary">    
-      		<h3>Section header</h3>
-      		<ul class='nav nav-tabs nav-stacked'>
-      			<li><a href='#'>Link 1</a></li>
-      			<li><a href='#'>Link 2</a></li>
-      			<li><a href='#'>Link 3</a></li>
-      			<li><a href='#'>Link 4</a></li>
-      		</ul>
-        </div>
-        
-			
+
+				<div class="fluid-sidebar sidebar span3" role="complementary">    
+      			<ul class='nav nav-tabs nav-stacked'>
+      				<?php wp_list_pages( array('title_li'=>'','include'=>get_post_top_ancestor_id()) ); ?>
+							<?php wp_list_pages( array('title_li'=>'','depth'=>1,'child_of'=>get_post_top_ancestor_id()) ); ?>  
+					</div>
+
 				<div id="main" class="span9 clearfix" role="main">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
