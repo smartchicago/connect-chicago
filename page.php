@@ -8,13 +8,13 @@ Template Name: Default Page
 
 			<div id="content" class="clearfix row-fluid">
 
-				<div class="fluid-sidebar sidebar span3" role="complementary">    
+				<div class="fluid-sidebar sidebar span2" role="complementary">    
       			<ul class='nav nav-tabs nav-stacked'>
       				<?php wp_list_pages( array('title_li'=>'','include'=>get_post_top_ancestor_id()) ); ?>
 							<?php wp_list_pages( array('title_li'=>'','depth'=>1,'child_of'=>get_post_top_ancestor_id()) ); ?>  
 					</div>
 
-				<div id="main" class="span9 clearfix" role="main">
+				<div id="main" class="span8 clearfix" role="main">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					

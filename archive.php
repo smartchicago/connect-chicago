@@ -39,7 +39,7 @@
 								<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured' ); ?></a>
 								<p>&nbsp;</p>
 							</div>
-							<div class='span9'>
+							<div class='span7'>
 								<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
 								<p class="meta"><time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_date(); ?></time></p>
 								<?php the_content( __("Read more &raquo;","bonestheme") ); ?>
