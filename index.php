@@ -2,10 +2,9 @@
 			
 			<div class="row-fluid">
 				<div class="span6">
+						<div class='well home-box'>
 						<h2><a href='/locations'>Locations</a></h2>
 						<p class='lead'>Find and share technology resources and locations</p>
-						
-						<div class='well'>
 							<h3>
 				        Search near an address 
 				      </h3>
@@ -14,7 +13,6 @@
 				      	<input id="btnSearch" class="btn btn-primary" type="button" value="Search" />
 				      	<input id="findMe" class="btn btn-info" type="button" value="Find me" />
 				      </div>
-				    </div>
 
 			      <p><br /><a href='/locations'>Browse all locations &raquo;</a></p>
 			      <!-- 
@@ -36,9 +34,11 @@
 						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 							</div>
 						</div> -->
+					</div>
 				</div>
 
 				<div class="span6">
+					<div class='well home-box'>
 						<h2><a href='/learn'>Learn</a></h2>
 						<p class='lead'>Sign up for online or in-person classes</p>
 						<p>Connect Chicago’s free instructional courses can aid job-seekers through technology training 
@@ -49,12 +49,12 @@
 							<li>Get training on Microsoft Word and Excel</li>
 							<li>Get connected to your friends and family by using social media</li>
 						</ul> -->
+					</div>
 				</div>
 			</div>
 
 			<div id="content" class="clearfix row-fluid">
 				<div class="span6 clearfix">
-					<hr />
 					<h2><a href='/about'>About</a></h2>
 					<p>Connect Chicago is a network of sites that spans the city and offers broadband access to Chicago’s 
 						three million residents. With sites in nearly every neighborhood, Connect Chicago is reaching 
@@ -74,7 +74,6 @@
 						<p><a href='/about'>Read more &raquo;</a></p>
 				</div>
 				<div id="main" class="span6 clearfix" role="main">
-					<hr />
 					<h2><a href='/news-events'>News &amp; Events</a></h2>
 					<?php
 						query_posts('cat=1&posts_per_page=3&orderby=date&order=DESC');
