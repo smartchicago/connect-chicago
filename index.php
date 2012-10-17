@@ -2,74 +2,71 @@
 			
 			<div class="row-fluid">
 				<div class="span6">
-						<div class='well'>
-						<h2>Locations</h2>
-						<p class='lead'>Find and share technology resources and locations</p>
-							<h3>
-				        Search near an address 
-				      </h3>
-				      <div class="input-append">
-				      	<input class="span8" id="search_address" placeholder="Enter an address ..." type="text" />
-				      	<input id="btnSearch" class="btn btn-primary" type="button" value="Search" />
-				      	<input id="findMe" class="btn btn-info" type="button" value="Find me" />
-				      </div>
-				      <p><br /><a href='/locations'>Browse all locations &raquo;</a></p>
-			      <hr />
+					<h2>Locations</h2>
+							<div class='well'>
+								<h3>
+					      	Find technology resources and locations
+					      </h3>
+					      <div class="input-append">
+					      	<input class="span8" id="search_address" placeholder="Enter an address ..." type="text" />
+					      	<input id="btnSearch" class="btn btn-primary" type="button" value="Search" />
+					      	<input id="findMe" class="btn btn-info" type="button" value="Find me" />
+					      </div>
+					      <p><br /><a href='/locations'>Browse all locations &raquo;</a></p>
+					    </div>
 
-			      <h3>Featured location</h3>
-			      <div class='row-fluid'>
-							<div class='span4'>
-								<a href="#" title="Featured location">
-									<img class='img-polaroid' alt='Featured location' src='http://locations.weconnectchicago.org/location/harold-washington-college-30-e-lake-street/m/image.jpg' title='Featured location'>
-								</a>
-							</div>
-							<div class='span8'>
-								<h3><a href="http://locations.weconnectchicago.org/location/harold-washington-college-30-e-lake-street">Harold Washington College</a></h3>
-								<p>City Colleges of Chicago</p>
-								<div class='row-fluid'>
-									<div class='span5'>
-										<p>
-											30 E. Lake Street<br />Chicago, IL 60601
-											<br />
-											(312) 553-3208 
-										</p>
+						  <div class='well'>
+					      <h3>Featured location</h3>
+					      <div class='row-fluid'>
+									<div class='span4'>
+										<a href="#" title="Featured location">
+											<img class='img-polaroid' alt='Featured location' src='http://locations.weconnectchicago.org/location/harold-washington-college-30-e-lake-street/m/image.jpg' title='Featured location'>
+										</a>
 									</div>
-									<div class='span7'>
-										<p>
-											Hours: Varies— see details
-											<br />
-											160 public computers available
-											<br />
-											<a href="http://locations.weconnectchicago.org/location/harold-washington-college-30-e-lake-street">More details &raquo;</a>
-										</p>
+									<div class='span8'>
+										<h3><a href="http://locations.weconnectchicago.org/location/harold-washington-college-30-e-lake-street">Harold Washington College</a></h3>
+										<p>City Colleges of Chicago</p>
+										<div class='row-fluid'>
+											<div class='span5'>
+												<p>
+													30 E. Lake Street<br />Chicago, IL 60601
+													<br />
+													(312) 553-3208 
+												</p>
+											</div>
+											<div class='span7'>
+												<p>
+													Hours: Varies— see details
+													<br />
+													160 public computers available
+													<br />
+													<a href="http://locations.weconnectchicago.org/location/harold-washington-college-30-e-lake-street">More details &raquo;</a>
+												</p>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
 
 				<div class="span6">
-					<div class='well'>
-						<h2>Learn</h2>
-						<p class='lead'>Sign up for online or in-person classes</p>
-						<p>Connect Chicago’s free instructional courses can aid job-seekers through technology training 
-						sessions, covering topics such as online job searching, resume creation, and other workforce 
-						readiness skills, and more sophisticated topics like social media and online financial management.</p>
+					<h2>Learn</h2>
+					<p>Connect Chicago’s free instructional courses can aid job-seekers through technology training 
+					sessions, covering topics such as online job searching, resume creation, and other workforce 
+					readiness skills, and more sophisticated topics like social media and online financial management.</p>
 
-						<p><a href='/learn'>More &raquo;</a></p>
-						<!-- <ul>
-							<li>Learn to create your own resume</li>
-							<li>Get training on Microsoft Word and Excel</li>
-							<li>Get connected to your friends and family by using social media</li>
-						</ul> -->
-					</div>
+					<p><a href='/learn'>More &raquo;</a></p>
+					<!-- <ul>
+						<li>Learn to create your own resume</li>
+						<li>Get training on Microsoft Word and Excel</li>
+						<li>Get connected to your friends and family by using social media</li>
+					</ul> -->
 				</div>
 			</div>
 
 			<div id="content" class="clearfix row-fluid">
 				<div class="span6 clearfix">
-					<h2><a href='/about'>About</a></h2>
+					<h2>About Connect Chicago</h2>
 					<p>Connect Chicago is a network of sites that spans the city and offers broadband access to Chicago’s 
 						three million residents. With sites in nearly every neighborhood, Connect Chicago is reaching 
 						populations with limited access to digital tools and knowledge.</p>
@@ -88,7 +85,7 @@
 						<p><a href='/about'>Read more &raquo;</a></p>
 				</div>
 				<div id="main" class="span6 clearfix" role="main">
-					<h2><a href='/news-events'>News &amp; Events</a></h2>
+					<h2>Recent News &amp; Events</h2>
 					<?php
 						query_posts('cat=1&posts_per_page=3&orderby=date&order=DESC');
 						if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -106,6 +103,8 @@
 						endwhile;
 						endif;
 					?>
+
+					<p><a href='/news-events'>Read more &raquo;</a></p>
 			
 				</div> <!-- end #main -->
     
