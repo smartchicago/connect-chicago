@@ -60,9 +60,9 @@
 						three million residents. With sites in nearly every neighborhood, Connect Chicago is reaching 
 						populations with limited access to digital tools and knowledge.</p>
 
-						<p>Connecting five partnering organizations – City Colleges of Chicago, Chicago Housing Authority, 
-						Chicago Public Libraries, City of Chicago’s Department of Family Support Services and Smart Health 
-						Centers – with each other, Connect Chicago has created a wide-reaching community of public computer 
+						<p>Connecting six partnering organizations – City Colleges of Chicago, Chicago Housing Authority, 
+						Chicago Public Libraries, City of Chicago’s Department of Family Support Services, Smart Health 
+						Centers and Chicago Cook Workforce Partnership – with each other, Connect Chicago has created a wide-reaching community of public computer 
 						centers, offering every Chicagoan the use of more than 3,000 free computers in 175 locations, a 
 						variety of free computer training courses in more than 70 venues, and more than 2,300 free WiFi 
 						hotspots and free internet access sites.</p>
