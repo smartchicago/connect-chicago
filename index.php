@@ -2,8 +2,8 @@
 			
 			<div class="row-fluid">
 				<div class="span6">
-						<div class='well home-box'>
-						<h2><a href='/locations'>Locations</a></h2>
+						<div class='well'>
+						<h2>Locations</h2>
 						<p class='lead'>Find and share technology resources and locations</p>
 							<h3>
 				        Search near an address 
@@ -13,37 +13,51 @@
 				      	<input id="btnSearch" class="btn btn-primary" type="button" value="Search" />
 				      	<input id="findMe" class="btn btn-info" type="button" value="Find me" />
 				      </div>
+				      <p><br /><a href='/locations'>Browse all locations &raquo;</a></p>
+			      <hr />
 
-			      <p><br /><a href='/locations'>Browse all locations &raquo;</a></p>
-			      <!-- 
-
-			      <h3>
-			      	Featured location
-			      	<small><a href='/locations'>Find more &raquo;</a></small>
-			      </h3>
+			      <h3>Featured location</h3>
 			      <div class='row-fluid'>
-							<div class='span3'>
+							<div class='span4'>
 								<a href="#" title="Featured location">
-									<img alt='Featured location' src='<?php echo get_template_directory_uri(); ?>/images/450x250.gif' title='Featured location'>
-							</a>
+									<img class='img-polaroid' alt='Featured location' src='http://locations.weconnectchicago.org/location/harold-washington-college-30-e-lake-street/m/image.jpg' title='Featured location'>
+								</a>
 							</div>
-							<div class='span9'>
-								<h3><a href="#">Harold Washington Library</a></h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+							<div class='span8'>
+								<h3><a href="http://locations.weconnectchicago.org/location/harold-washington-college-30-e-lake-street">Harold Washington College</a></h3>
+								<p>City Colleges of Chicago</p>
+								<div class='row-fluid'>
+									<div class='span5'>
+										<p>
+											30 E. Lake Street<br />Chicago, IL 60601
+											<br />
+											(312) 553-3208 
+										</p>
+									</div>
+									<div class='span7'>
+										<p>
+											Hours: Varies— see details
+											<br />
+											160 public computers available
+											<br />
+											<a href="http://locations.weconnectchicago.org/location/harold-washington-college-30-e-lake-street">More details &raquo;</a>
+										</p>
+									</div>
+								</div>
 							</div>
-						</div> -->
+						</div>
 					</div>
 				</div>
 
 				<div class="span6">
-					<div class='well home-box'>
-						<h2><a href='/learn'>Learn</a></h2>
+					<div class='well'>
+						<h2>Learn</h2>
 						<p class='lead'>Sign up for online or in-person classes</p>
 						<p>Connect Chicago’s free instructional courses can aid job-seekers through technology training 
 						sessions, covering topics such as online job searching, resume creation, and other workforce 
 						readiness skills, and more sophisticated topics like social media and online financial management.</p>
+
+						<p><a href='/learn'>More &raquo;</a></p>
 						<!-- <ul>
 							<li>Learn to create your own resume</li>
 							<li>Get training on Microsoft Word and Excel</li>
