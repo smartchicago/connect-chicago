@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 			
-			<div class="row-fluid">
+			<div class="row">
 				<div class="span6">
 					<h2>Locations</h2>
 							<div class='well'>
@@ -8,7 +8,7 @@
 					      	Find technology resources and locations
 					      </h3>
 					      <div class="input-append">
-					      	<input class="span8" id="search_address" placeholder="Enter an address ..." type="text" />
+					      	<input class="span4" id="search_address" placeholder="Enter an address ..." type="text" />
 					      	<input id="btnSearch" class="btn btn-primary" type="button" value="Search" />
 					      	<input id="findMe" class="btn btn-info" type="button" value="Find me" />
 					      </div>
@@ -51,9 +51,17 @@
 
 				<div class="span6">
 					<h2>Learn</h2>
-					<p>Connect Chicago’s free instructional courses can aid job-seekers through technology training 
-					sessions, covering topics such as online job searching, resume creation, and other workforce 
-					readiness skills, and more sophisticated topics like social media and online financial management.</p>
+					<P>The free courses offered through Connect Chicago and its partners can assist all Chicago residents of 
+						all ages and skills with training covering topics such as:</p>
+
+					<ul>
+		        <li>Basic digital literacy</li>
+		        <li>Desktop applications</li>
+		        <li>Online job searching</li>
+		        <li>Resume creation</li>
+		        <li>Social media</li>
+		        <li>Online personal financial management</li>
+		       </ul>
 
 					<p><a href='/learn'>More &raquo;</a></p>
 					<!-- <ul>

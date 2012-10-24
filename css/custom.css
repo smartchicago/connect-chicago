@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic');
 
 body {
-  font-size: 14px;
+  font-size: 15px;
   font-family: 'Quattrocento Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6{ 
   font-family: 'Quattrocento Sans', sans-serif;
+}
+
+p {
+  margin-bottom: 15px;
 }
 
 .navbar-inner {
@@ -92,7 +96,7 @@ h2 {
 }
 
 .partner-logos a {
-  padding-right: 20px;
+  padding-right: 80px;
 }
 
 .partner-logos a:hover {
