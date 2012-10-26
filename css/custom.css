@@ -87,6 +87,7 @@ p {
 h2 { 
   line-height: 35px; 
   margin: 5px 0;
+  border-bottom: 1px solid #ccc;
 }
 
 .partner-logos{
@@ -113,4 +114,15 @@ h2 {
 
 .featured-news {
   margin-bottom: 10px;
+}
+
+.hero-unit {
+  text-align: center;
+  background-image: url('/wp-content/themes/connect-chicago/images/connect-chicago-hero-bg.jpg'); 
+  background-repeat: no-repeat; 
+  background-position: 0 0;
+}
+
+.hero-unit h1 {
+  font-size: 45px;
 }

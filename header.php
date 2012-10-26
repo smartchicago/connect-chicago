@@ -99,6 +99,9 @@
 		            <li <?php if ( is_page_or_child('learn')) echo "class='active'" ?>>
 		              <a href='/learn'>Learn</a>
 		            </li>
+		            <li <?php if ( is_page_or_child('partners')) echo "class='active'" ?>>
+		              <a href='/partners'>Partners</a>
+		            </li>
 		            <li <?php if ( is_category(0)) echo "class='active'" ?>>
 		              <a href='/news-events'>News &amp; Events</a>
 		            </li>
@@ -117,4 +120,4 @@
 		
 		</header> <!-- end header -->
 		
-		<div class="container-fluid">
+		<div class="container">
