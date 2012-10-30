@@ -20,16 +20,15 @@
 				    </div>
 
 				    <div class='well'>
-						  <h3>Featured location</h3>
 							<?php
 								query_posts('cat=3&posts_per_page=1&orderby=date&order=DESC');
 								if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+									<h3>Featured location: <a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
 									<div class='row-fluid featured-news'>
-										<div class='span3'>
-											<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured' ); ?></a>
+										<div class='span5'>
+											<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured', array('class' => 'img-polaroid') ); ?></a>
 										</div>
-										<div class='span9'>
-											<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+										<div class='span7'>
 											<?php the_content( __("Read more &raquo;","bonestheme") ); ?>
 										</div>
 									</div>
@@ -78,7 +77,7 @@
 						if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 							<div class='row-fluid featured-news'>
 								<div class='span3'>
-									<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured' ); ?></a>
+									<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured', array('class' => 'img-polaroid') ); ?></a>
 								</div>
 								<div class='span9'>
 									<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
