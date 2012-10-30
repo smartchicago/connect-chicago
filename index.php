@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 		<div class='hero-unit'>
 			<h1>There are more than 250 places in Chicago where you can use a computer for free.
-			<br /><a href='/locations'>Find one today</a></h1>
+			<a href='/locations'>Find one today.</a></h1>
 		</div>
 
 			<div class="row">

@@ -116,15 +116,21 @@ h2 {
   margin-bottom: 10px;
 }
 
-.hero-unit {
-  text-align: center;
-  background-image: url('/wp-content/themes/connect-chicago/images/connect-chicago-hero-bg.jpg'); 
-  background-repeat: no-repeat; 
-  background-position: 0 0;
+.blog .hero-unit {
+  color: #ffffff;
+  background-color: #005081; 
+  padding: 30px;
 }
 
 .hero-unit h1 {
-  font-size: 45px;
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.hero-unit h1 a {
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .navbar .btn-navbar {
