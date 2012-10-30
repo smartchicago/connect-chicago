@@ -80,44 +80,50 @@
 	<body <?php body_class(); ?>>
 
 		<header role="banner">
-		
-			<div id="inner-header" class="clearfix">
+			<div class="container">
+				<div id="inner-header" class="clearfix">
 
-				<a href='/'>
-		      <img alt='Connect Chicago' class='logo' src='<?php echo get_template_directory_uri(); ?>/images/logo.png' title='Connect Chicago'>
-		    </a>
-		    <div class='navbar'>
-		      <div class='navbar-inner'>
-		        <div class='container'>
-		          <ul class='nav'>
-		            <li <?php if ( is_home()) echo "class='active'" ?>>
-		              <a href='/'>Home</a>
-		            </li>
-		            <li>
-		              <a href='/locations'>Locations</a>
-		            </li>
-		            <li <?php if ( is_page_or_child('learn')) echo "class='active'" ?>>
-		              <a href='/learn'>Learn</a>
-		            </li>
-		            <li <?php if ( is_page_or_child('partners')) echo "class='active'" ?>>
-		              <a href='/partners'>Partners</a>
-		            </li>
-		            <li <?php if ( is_category(0)) echo "class='active'" ?>>
-		              <a href='/news-events'>News &amp; Events</a>
-		            </li>
-		            <li <?php if ( is_page_or_child('volunteer')) echo "class='active'" ?>>
-		              <a href='/volunteer'>Volunteer</a>
-		            </li>
-		            <li <?php if ( is_page_or_child('about')) echo "class='active'" ?>>
-		              <a href='/about'>About</a>
-		            </li>
-		          </ul>
-		        </div>
-		      </div>
-		    </div>
-			
-			</div> <!-- end #inner-header -->
-		
+					<a href='/'>
+			      <img alt='Connect Chicago' class='logo' src='<?php echo get_template_directory_uri(); ?>/images/logo.png' title='Connect Chicago'>
+			    </a>
+			    <div class='navbar'>
+			      <div class='navbar-inner'>
+			        <div class='container'>
+			        	<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+								<a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+									<span class='icon-bar'></span>
+									<span class='icon-bar'></span>
+									<span class='icon-bar'></span>
+								</a>
+
+								<div class='nav-collapse'>
+				          <ul class='nav'>
+				            <li <?php if ( is_home()) echo "class='active'" ?>>
+				              <a href='/'>Home</a>
+				            </li>
+				            <li>
+				              <a href='/locations'>Locations</a>
+				            </li>
+				            <li <?php if ( is_page_or_child('learn')) echo "class='active'" ?>>
+				              <a href='/learn'>Learn</a>
+				            </li>
+				            <li <?php if ( is_page_or_child('partners')) echo "class='active'" ?>>
+				              <a href='/partners'>Partners</a>
+				            </li>
+				            <li <?php if ( is_category(0)) echo "class='active'" ?>>
+				              <a href='/news-events'>News &amp; Events</a>
+				            </li>
+				            <li <?php if ( is_page_or_child('about')) echo "class='active'" ?>>
+				              <a href='/about'>About</a>
+				            </li>
+				          </ul>
+				        </div>
+			        </div>
+			      </div>
+			    </div>
+				
+				</div> <!-- end #inner-header -->
+			</div>
 		</header> <!-- end header -->
 		
 		<div class="container">
