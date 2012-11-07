@@ -6,7 +6,10 @@
 
 			<div class="row">
 				<div class="span6">
-					<h2>Locations</h2>
+					<h2>
+						Locations
+						<small class='home-action'><a href='/locations'>Browse all &raquo;</a></small>
+					</h2>
 						<div class='well'>
 							<h3>
 				      	Find a computer lab
@@ -16,20 +19,22 @@
 				      	<input id="btnSearch" class="btn btn-primary" type="button" value="Search" />
 				      	<input id="findMe" class="btn btn-info" type="button" value="Find me" />
 				      </div>
-				      <p><br /><a href='/locations'>Browse all locations &raquo;</a></p>
 				    </div>
 
 				    <div class='well'>
 							<?php
 								query_posts('cat=3&posts_per_page=1&orderby=date&order=DESC');
 								if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-									<h3>Featured location: <a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+									<h3>Featured location</h3>
 									<div class='row-fluid featured-news'>
 										<div class='span5'>
 											<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured', array('class' => 'img-polaroid') ); ?></a>
 										</div>
 										<div class='span7'>
-											<?php the_content( __("Read more &raquo;","bonestheme") ); ?>
+											<div class='home-content'>
+												<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+												<?php the_content( __("Read more &raquo;","bonestheme") ); ?>
+											</div>
 										</div>
 									</div>
 								<?php
@@ -71,7 +76,10 @@
 						</div>
 
 				<div id="main" class="span6 clearfix" role="main">
-					<h2>News &amp; Events</h2>
+					<h2>
+						News &amp; Events
+						<small class='home-action'><a href='/news-events'>Read more &raquo;</a></small>
+					</h2>
 					<?php
 						query_posts('cat=1&posts_per_page=3&orderby=date&order=DESC');
 						if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -80,9 +88,13 @@
 									<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured', array('class' => 'img-polaroid') ); ?></a>
 								</div>
 								<div class='span9'>
-									<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-									<p class="meta"><time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_date(); ?></time></p>
-									<?php the_content( __("Read more &raquo;","bonestheme") ); ?>
+									<div class='home-content'>
+										<h3>
+											<a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+											<small><br /><time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_date(); ?></time></small>
+										</h3>
+										<?php the_content( __("Read more &raquo;","bonestheme") ); ?>
+									</div>
 								</div>
 							</div>
 						<?php
@@ -90,8 +102,6 @@
 						endif;
 					?>
 
-					<p><a href='/news-events'>Read more &raquo;</a></p>
-			
 				</div> <!-- end #main -->
 			</div>
 

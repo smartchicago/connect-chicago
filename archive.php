@@ -36,7 +36,7 @@
 
 						<div class='row-fluid'>
 							<div class='span3'>
-								<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured' ); ?></a>
+								<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail( 'wpbs-featured', array('class' => 'img-polaroid') ); ?></a>
 								<p>&nbsp;</p>
 							</div>
 							<div class='span7'>

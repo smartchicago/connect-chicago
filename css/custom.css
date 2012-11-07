@@ -9,6 +9,10 @@ h1, h2, h3, h4, h5, h6{
   font-family: 'Quattrocento Sans', sans-serif;
 }
 
+h3 {
+  line-height: 20px;
+}
+
 p {
   margin-bottom: 15px;
 }
@@ -117,9 +121,11 @@ h2 {
 }
 
 .blog .hero-unit {
-  color: #ffffff;
-  background-color: #005081; 
+  background-image: url('/wp-content/themes/connect-chicago/images/connect-chicago-hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
   padding: 30px;
+  margin-bottom: 15px;
 }
 
 .hero-unit h1 {
@@ -129,8 +135,16 @@ h2 {
 
 .hero-unit h1 a {
   font-weight: bold;
-  color: #ffffff;
   text-decoration: underline;
+}
+
+.home-content {
+  padding-left: 10px;
+}
+
+.home-action a {
+  font-size: 15px;
+  color: #999;
 }
 
 .navbar .btn-navbar {
