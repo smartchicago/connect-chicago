@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic');
 
 body {
-  font-size: 15px;
+  font-size: 16px;
   font-family: 'Quattrocento Sans', sans-serif;
+  line-height: 22px;
 }
 
 h1, h2, h3, h4, h5, h6{ 
