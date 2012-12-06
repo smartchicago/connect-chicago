@@ -102,7 +102,7 @@
 				              <a href='/'>Home</a>
 				            </li>
 				            <li>
-				              <a href='/locations'>Locations</a>
+				              <a href='http://locations.weconnectchicago.org'>Locations</a>
 				            </li>
 				            <li <?php if ( is_page_or_child('learn')) echo "class='active'" ?>>
 				              <a href='/learn'>Learn</a>
@@ -112,6 +112,9 @@
 				            </li>
 				            <li <?php if ( is_page_or_child('about')) echo "class='active'" ?>>
 				              <a href='/about'>About</a>
+				            </li>
+				            <li <?php if ( is_page_or_child('contact-us')) echo "class='active'" ?>>
+				              <a href='/contact-us'>Contact Us</a>
 				            </li>
 				          </ul>
 				        </div>
