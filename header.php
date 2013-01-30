@@ -83,6 +83,7 @@
 			<div class="container">
 				<div id="inner-header" class="clearfix">
 
+					<?php echo qtrans_generateLanguageSelectCode('text'); ?>
 					<a href='/'>
 			      <img alt='Connect Chicago' class='logo' src='<?php echo get_template_directory_uri(); ?>/images/logo.png' title='Connect Chicago'>
 			    </a>

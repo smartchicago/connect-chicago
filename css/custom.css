@@ -26,6 +26,19 @@ p {
   box-shadow: none;
 }
 
+.qtrans_language_chooser {
+  float: right;
+  padding-top: 30px;
+}
+
+.qtrans_language_chooser li {
+  display: inline;
+  list-style: none;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-right: 1px solid #ccc;
+}
+
 .navbar .brand {
   padding: 5px 20px 5px;
 }
